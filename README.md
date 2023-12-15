@@ -139,23 +139,21 @@ def main():
     create_folders_from_list(regions, to_lowercase=True, remove_spaces=True)
 ```
 
-#### 5. Conditional Script Execution
+### Conditional Script Execution
 
 Ensure the main function only executes when the script is run directly,
-not when imported as a module by using the standard boilerplate code.
+not when imported as a module by using standard boilerplate code.
 
 ```python
 if __name__ == '__main__':
     main()
 ```
 
-#### 6. Module Design
+### Module Design
 
-1. The code should be clear, well-organized, and easy to understand.
-1. Add additional notes and experiments as you like.
-1. Include comments and docstrings for clarity.
-1. The module should showcase the use of loops, conditions, and folder creation.
-1. Include a docstring at the top of the file describing its purpose.
+- Include a docstring at the top of the file describing its purpose.
+- The code should be clear, well-organized, and demonstrate good practices.
+- Include comments and docstrings for clarity.
 
 ### Evaluation Criteria
 
