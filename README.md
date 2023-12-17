@@ -13,33 +13,36 @@ drafting project folders (e.g. folders for a range of years, or from a list of f
 - Script:             yourname_projsetup.py
 
 Create a new GitHub repository with a default README.md.
-In your GitHub repository, create new file with the name listed above.
-You are always welcome to use a pseudonym or brand name instead of your actual name.
-It should be pretty unique and consistent across all projects.
+In your GitHub repository, create new empty file with the name listed above.
 
-## Module Specification
-
-### Objective
+## Objective
 
 Develop a Python module that demonstrates proficiency in loops, project folder creation using pathlib, and importing modules.
 This module should include reusable functions for creating sets of project folders based on various criteria.
 
-### Requirements
+## Requirements
 
-#### 1. Import Attributes from Module 1
+### 1. Project Start
 
-Demonstrate the ability to fetch and import yourname_attr.py from Module 1 using curl at the command line. Add your prior code to this project by importing it after your other imports.
+Include a docstring at the top of the file describing its purpose. For example:
 
 ```python
-import os
-import pathlib
-import time
-import yourname_attr 
+''' This module provides functions for creating a series of project folders. '''
 ```
 
-#### 2. Implement Functions for Folder Creation
+### 2. Import Dependencies
 
-1. Implement reusable functions to create a series of project folders.
+After the docstring, import the modules used in this script - include your module from the previous project. For example:
+
+```python
+import math
+import statistics
+import stellar_analytics_utils
+```
+
+### 3. Define Functions for Folder Creation
+
+1. Define reusable functions to create a series of project folders.
 1. Each function should have a clear purpose, input parameters, and return values if applicable.
 1. Include a docstring for each function to describe its behavior.
 1. Use for in range(), for in list, and while loops to demonstrate different looping techniques.
@@ -72,7 +75,7 @@ Function 4. While Loop: Write a function to create folders periodically (e.g., o
 def create_folders_periodically(duration):
 ```
 
-#### 3. Join Paths with Pathlib
+### 4. Always Join Paths with Pathlib
 
 In your code, use pathlib to join paths and create folders.
 Never use operating system-specific path symbols such as slashes, backslashes, or double back slashes.
@@ -91,25 +94,19 @@ data_path = project_path.joinpath('data')
 data_path.mkdir(exist_ok=True)
 ```
 
-#### 4. Main Function
+### 5. Define Main Function
 
-Implement a `main()` function to test the folder creation functions and demonstrate the use of imported modules. For example:
+Define a main() function to test the folder creation functions and demonstrate the use of imported modules. For example:
 
 ```python
 def main():
     ''' Main function to demonstrate module capabilities. '''
 
-    # Demonstrating imported functionality from Module 1
-    print("Imported attributes:")
-    print(f"Name: {yourname_attr.my_name_string}")
-    print(f"Course Count: {yourname_attr.course_count_string}")
-    print(f"Experience Status: {yourname_attr.is_experienced_string}")
-    print(f"Hours Invested: {yourname_attr.hours_invested_string}")
+    # Print byline from imported module
+    print(f"Byline: {stellar_analytics_utils.byline}")
 
     # Call function 1 to create folders for a range (e.g. years)
-    start_year = 2021
-    end_year = 2023
-    create_folders_for_range(start_year, end_year)
+    create_folders_for_range(start_year=2020, end_year=2023)
 
     # Call function 2 to create folders given a list
     folder_names = ['data-csv', 'data-excel', 'data-json']
@@ -151,9 +148,8 @@ if __name__ == '__main__':
 
 ### Module Design
 
-- Include a docstring at the top of the file describing its purpose.
-- The code should be clear, well-organized, and demonstrate good practices.
-- Include comments and docstrings for clarity.
+The code should be clear, well-organized, and demonstrate good practices.
+Include comments and docstrings for clarity.
 
 ### Evaluation Criteria
 
