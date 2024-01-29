@@ -8,9 +8,9 @@ drafting project folders (e.g. folders for a range of years, or from a list of f
 
 ## Deliverable Names
 
-- GitHub Repository:  datafun-02-projsetup
+- GitHub Repository:  **datafun-02-projsetup**
 - Documentation:      README.md
-- Script:             yourname_projsetup.py
+- Script:             **yourname_projsetup.py**
 
 Create a new GitHub repository with a default README.md.
 In your GitHub repository, create new empty file with the name listed above.
@@ -24,15 +24,23 @@ This module should include reusable functions for creating sets of project folde
 
 ### 1. Project Start
 
-Include a docstring at the top of the file describing its purpose. For example:
+In your Python file, create a docstring with a brief introduction to your project.
+For example:
 
 ```python
 ''' This module provides functions for creating a series of project folders. '''
 ```
 
-### 2. Import Dependencies
+### 2. Import Dependencies (At the Top, After the Introduction)
 
-After the docstring, import the modules used in this script - include your module from the previous project. For example:
+Organize your project imports near the top of the file, following conventions.
+For example, standard library imports first, then external library imports, then local module imports. 
+Continue to practice importing your own modules and reuse your prior code when building your project folders.
+Follow conventional package import organization and alias. 
+Import each package just once near the top of the file. 
+Be sure you have INSTALLED any external packages (those not in the Python Standard Library) into your active project virtual environment first. 
+
+Python import code example:
 
 ```python
 import math
@@ -96,7 +104,9 @@ data_path.mkdir(exist_ok=True)
 
 ### 5. Define Main Function
 
-Define a main() function to test the folder creation functions and demonstrate the use of imported modules. For example:
+Define a main() function to test the folder creation functions and demonstrate the use of imported modules.
+
+Python main() function code example:
 
 ```python
 def main():
@@ -136,7 +146,7 @@ def main():
     create_folders_from_list(regions, to_lowercase=True, remove_spaces=True)
 ```
 
-### Conditional Script Execution
+### Conditional Script Execution (at the end of the file)
 
 Ensure the main function only executes when the script is run directly,
 not when imported as a module by using standard boilerplate code.
