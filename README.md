@@ -34,11 +34,9 @@ For example:
 ### 2. Import Dependencies (At the Top, After the Introduction)
 
 Organize your project imports near the top of the file, following conventions.
-For example, standard library imports first, then external library imports, then local module imports. 
-Continue to practice importing your own modules and reuse your prior code when building your project folders.
-Follow conventional package import organization and alias. 
-Import each package just once near the top of the file. 
-Be sure you have INSTALLED any external packages (those not in the Python Standard Library) into your active project virtual environment first. 
+For example, standard library imports first, then external library imports (we don't need any of these yet), then local module imports. 
+Follow conventional package import organization. 
+Import each package just once near the top of the file.  
 
 Python import code example:
 
